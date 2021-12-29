@@ -3,9 +3,9 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-29T23:12:26.18588724+01:00"
+    created: "2021-12-29T23:13:58.401583948+01:00"
     description: A Helm chart for Kubernetes
-    digest: 519c402976e18da28770d2dcc1274e472aed82fc96ca3a38c7c745eccfff105b
+    digest: de3fb1a17862d48f578397f75e6aec1a15968d46e960e019ac2f76a81832d2be
     name: helm-chart-test
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   website:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-29T23:12:26.208980378+01:00"
+    created: "2021-12-29T23:13:58.405505284+01:00"
     description: A Helm chart for Kubernetes
-    digest: 03f5d38b74cdc57d0027ec0ad19226212399fe0530217c26ea6671fc7f03ec78
+    digest: 680a6da28c41c9cac50806b8cebd6b9f3e8c1eba6317f4d6012db14709a02375
     name: website
     type: application
     urls:
     - https://wise-corp.github.io/helm-charts/website-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-29T23:12:26.156909094+01:00"
+generated: "2021-12-29T23:13:58.383510109+01:00"
