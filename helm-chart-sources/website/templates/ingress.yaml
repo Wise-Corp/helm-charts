@@ -1,0 +1,60 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-website
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
+spec:
+  rules:
+  - host: "www.wisecorp.tn"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: website-service
+            port:
+              number: 80
+  - host: "wisecorp.tn"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: website-service
+            port:
+              number: 80
+  - host: "www.wise.tn"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: website-service
+            port:
+              number: 80
+  - host: "wise.tn"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: website-service
+            port:
+              number: 80
+ 
+  tls:
+  - secretName: ingress-wisecorp-website
+    hosts:
+      - "www.wisecorp.tn"
+      - "wisecorp.tn"
+      - "www.wise.tn"
+      - "wise.tn"
+
